@@ -1,0 +1,214 @@
+html {
+    font-size: 10px;
+    font-family: 'Questrial', sans-serif;
+    background-color: #FFF5EB;
+    width: 100%;
+}
+
+/* header */
+    header {
+        display: flex;
+        justify-content: right;
+    }
+    header > h1 {
+        font-size: 30px;
+        width: 67%;
+}
+
+
+/* NAV */
+    nav ul {
+        padding: 0 10px 0 10px;
+        list-style: none;
+    }
+
+    nav li {
+        display: inline-block;
+        font-size: 20px;
+        padding: 10px 10px 0 10px;
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+
+/* intro */
+    #flex-container-intro {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+
+    #top h1 {
+        font-size: 45px;
+        color: black;
+        padding: 120px 0 0 0;
+        width: 500px;
+    }
+
+    .me {
+        height: 500px;
+        padding: 55px 0 200px 110px;
+        object-fit: contain;
+        border-radius: 5%; /* doesnt work */
+    }
+
+    #rectangle {
+        width: 700px;
+        height: 250px;
+        border: solid, blue;
+        display: block;
+        margin-left: 570px;
+        margin-top: -430px;
+    }
+
+    #top p {
+        padding: 0;
+        width: 600px;
+        font-size: 16px;
+        line-height: 2;
+        letter-spacing: 1px;
+    }
+
+    h2 {
+        font-size: 60px;
+        padding: 20px 30px 0 30px;
+    }
+
+    #flex-container-logos {
+        flex-wrap: wrap;
+        display: flex;
+    }
+
+    .ig-logo {
+        width: 40px;
+        height: 40px;
+        padding: 30px 0 0 0;
+    }
+    .youtube-logo {
+        width: 50px;
+        height: 35px;
+        padding: 33px 0 0 20px;
+    }
+
+
+/* main content */
+
+    /* outer box */
+    #flex-container-1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        border: solid;
+    }
+
+    /* inner 2 boxes */
+    #flex-container-2 {
+        width: 45%;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      flex-direction: row;
+
+    }
+
+    .column {
+      display: flex;
+      flex-wrap: wrap;
+      float: left;
+      width: 32%;
+      padding: 5px;
+      border: solid;
+      justify-content: center;
+    }
+
+    #work img {
+
+    }
+
+
+    img{
+        display: block; /* images act as text if display is not block */
+
+        width: 70%;
+        object-fit: cover;
+    }
+
+    p {
+        margin: 0;
+        font-size: 25px;
+
+    }
+
+
+/* footer */
+    footer {
+        background-color: #F6BD60;
+        background-size: cover;
+        padding: 10px;
+    }
+
+    footer p {
+        font-size: 16px;
+        margin: 30px;
+        line-height: 1.25;
+    }
+
+
+
+
+/* photography */
+    #photography img{
+        display: block; /* images act as text if display is not block */
+        height: 600px;
+        width: 550px;
+        object-fit: cover;
+    }
+
+
+
+
+/* photography page */
+    #photography-container-vertical, #photography-container-landscape, #photography-container-square, #photography-container-ttc {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #photography-page img{
+        flex: auto;
+        display: block;
+        padding: 0 30px 30px 30px;
+        object-fit: cover;
+    }
+
+    .col-4 img{
+        flex: auto;
+        display: block;
+        padding: 0 30px 30px 30px;
+        object-fit: cover;
+    }
+
+    #photography-container-vertical img{
+        width: 300px;
+        height: 600px;
+    }
+
+    #photography-container-landscape img{
+        height: 400px;
+    }
+
+    #photography-container-square img{
+        width: 300px;
+        height: 500px;
+    }
+
+    #photography-container-ttc img {
+        height: 600px;
+    }
+
+/* headings */
