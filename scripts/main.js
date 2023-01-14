@@ -23,6 +23,13 @@ myButton.onclick = function() {
     setUserName();
 } */
 
+document.addEventListener("click", function (e)) {
+    if(e.target.classList.contains("gallery-item")) {
+        const src = e.target.getAttribute("src");
+        console.log(src);
+    }
+}
+
 myImage.onclick = function() {
     let mySrc = myImage.getAttribute('src');
     if (mySrc === 'first-site/images/jennyycreates-logo.png') {
