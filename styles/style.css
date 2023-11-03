@@ -3,6 +3,7 @@ html {
     font-family: 'Questrial', sans-serif;
     background-color: #FFF5EB;
     width: 100%;
+    scroll-behavior: smooth;
 }
 
 /* header */
