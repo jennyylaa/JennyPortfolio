@@ -1,65 +1,92 @@
-let myImage = document.querySelector('img');
-let myButton = document.querySelector('button');
-let myHeading = document.querySelector('h1');
+//Get the button
+let mybutton = document.getElementById("btn-back-to-top");
 
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
+// // When the user scrolls down 20px from the top of the document, show the button
+// window.onscroll = function () {
+//   scrollFunction();
+// };
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
+// function scrollFunction() {
+//   if (
+//     document.body.scrollTop > 20 ||
+//     document.documentElement.scrollTop > 20
+//   ) {
+//     mybutton.style.display = "block";
+//   } else {
+//     mybutton.style.display = "none";
+//   }
+// }
+// When the user clicks on the button, scroll to the top of the document
+mybutton.addEventListener("click", backToTop);
 
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-
-/* function setUserName() {
-    let myName = prompt('please enter your name.');
-    if (!myName) {
-        setUserName();
-    } else {
-        localStorage.setItem('name', myName);
-        myHeading.textContent = 'yessir, ' + myName;
-    }
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
 
-if(!localStorage.getItem('name')) {
-    setUserName();
-} else {
-    let storedName = localStorage.getItem('name');
-    myHeading.textContent = 'yuh, ' + storedName;
-}
 
-myButton.onclick = function() {
-    setUserName();
-} */
+// let myImage = document.querySelector('img');
+// let myButton = document.querySelector('button');
+// let myHeading = document.querySelector('h1');
 
-document.addEventListener("click", function (e)) {
-    if(e.target.classList.contains("gallery-item")) {
-        const src = e.target.getAttribute("src");
-        console.log(src);
-    }
-}
+// $(document).ready(function(){
+//   // Add smooth scrolling to all links
+//   $("a").on('click', function(event) {
 
-myImage.onclick = function() {
-    let mySrc = myImage.getAttribute('src');
-    if (mySrc === 'first-site/images/jennyycreates-logo.png') {
-        myImage.setAttribute('src', 'first-site/images/chipmunk.png')
-    } else {
-        myImage.setAttribute('src', 'first-site/images/jennyycreates-logo.png')
-    }
-}
+//     // Make sure this.hash has a value before overriding default behavior
+//     if (this.hash !== "") {
+//       // Prevent default anchor click behavior
+//       event.preventDefault();
+
+//       // Store hash
+//       var hash = this.hash;
+
+//       // Using jQuery's animate() method to add smooth page scroll
+//       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+//       $('html, body').animate({
+//         scrollTop: $(hash).offset().top
+//       }, 800, function(){
+
+//         // Add hash (#) to URL when done scrolling (default click behavior)
+//         window.location.hash = hash;
+//       });
+//     } // End if
+//   });
+// });
+
+// /* function setUserName() {
+//     let myName = prompt('please enter your name.');
+//     if (!myName) {
+//         setUserName();
+//     } else {
+//         localStorage.setItem('name', myName);
+//         myHeading.textContent = 'yessir, ' + myName;
+//     }
+// }
+
+// if(!localStorage.getItem('name')) {
+//     setUserName();
+// } else {
+//     let storedName = localStorage.getItem('name');
+//     myHeading.textContent = 'yuh, ' + storedName;
+// }
+
+// myButton.onclick = function() {
+//     setUserName();
+// } */
+
+// document.addEventListener("click", function (e)) {
+//     if(e.target.classList.contains("gallery-item")) {
+//         const src = e.target.getAttribute("src");
+//         console.log(src);
+//     }
+// }
+
+// myImage.onclick = function() {
+//     let mySrc = myImage.getAttribute('src');
+//     if (mySrc === 'first-site/images/jennyycreates-logo.png') {
+//         myImage.setAttribute('src', 'first-site/images/chipmunk.png')
+//     } else {
+//         myImage.setAttribute('src', 'first-site/images/jennyycreates-logo.png')
+//     }
+// }
