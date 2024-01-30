@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>jenny's portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+
     <link href="styles/bootstrap.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Orelega+One&family=Questrial&display=swap" rel="stylesheet">
 </head>
@@ -14,7 +14,7 @@
     <!-- nav bar -->
     <nav class="navbar navbar-expand-lg mx-4">
         <div class="container">
-            <a href="index.html" class="navbar-brand"> JennyyCreates</a>
+            <a href="index.html" class="navbar-brand"> Jenny La</a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
                 <span class="navbar-toggler-icon"></span>
@@ -23,27 +23,53 @@
             <div class="collapse navbar-collapse lead" id="navmenu">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a href="ux-design.html" class="nav-link">projects</a>
+                        <a href="index.html" class="nav-link">projects</a>
                     </li>
                     <li class="nav-item">
-                        <a href="work.html" class="nav-link">work</a>
+                        <a href="ux-design.html" class="nav-link">artwork</a>
                     </li>
                     <li class="nav-item">
                         <a href="about.html" class="nav-link">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://drive.google.com/file/d/1Yr5GUIw5eeobRpo7-vjAuMZDyCAv96DY/view?usp=sharing"
+                            target="_blank" class="nav-link">resume</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <a href="ux-design.html"><img src="images/back.png" alt="left chevron back button" class="mx-5 px-4"
+    <a href="index.html"><img src="images/back.png" alt="left chevron back button" class="mx-5 px-4"
             style="width: 6%;"></a>
 
-    <div class="row text-center justify-content-center py-3">
+    <!-- <div class="row text-center justify-content-center py-3">
         <h3 class="mb-2">Studium</h3>
         <p>simple communcation between teachers and students</p>
-        <p>Sept - Dec 2021 </p>
-    </div>
+        <p><b>Project Type:</b> UI/UX, Mobile iOS <b>Role:</b> Educational Systems Designer</p>
+        <p></p>
+        <p><b>Tools:</b> Figma, Miro</p>
+        <p><b>Timeline:</b> Sept - Dec 2021 </p>
+    </div> -->
+
+    <section class="p-5 pt-1">
+        <div class="row justify-content-center">
+            <div class="col-md-6 img-fluid text-center mb-3" style="width: 500px;">
+                <h2>Studium</h2>
+                <p>simple communication between teachers and students</p>
+            </div>
+            <div class="row justify-content-center ms-5">
+                <div class="col-md-6 img-fluid lh-1" style="width: 300px;">
+                    <p class="mt-2"><b>Project Type:</b> UI/UX, Mobile iOS</p>
+                    <p><b>Role:</b> Educational Systems Designer</p>
+                </div>
+                <div class="col-md-6 img-fluid lh-1" style="width: 300px;">
+                    <p class="mt-2"><b>Tools:</b> Figma, Miro</p>
+                    <p><b>Timeline:</b> Sept - Dec 2021 </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <div class="col-md img-fluid">
         <img src="images/studium4.png" class="mb-5 img-fluid" alt="studium interface"
@@ -53,21 +79,30 @@
     <section class="container">
         <div class="row justify-content-center mx-5">
             <h4>The Problem</h4>
-            <p>Online learning platforms can be unorganized, hard to use for both students and teachers.
+            <p>In order to define our problem space, our team created a mind map of what an educational system entails
+                and what the key factors are. Online learning platforms can be unorganized, hard to use for both
+                students and teachers.
                 Students end up having to use multiple online platforms for certain courses and it can be hard
                 to communicate with professors at times. </p>
+            <p class="lead text-center">Mind Map</p>
+            <img src="images/mind-map.png" class="mb-5" alt="persona of male student in first year of university"
+                style="width: 1000px;">
         </div>
 
     </section>
 
-    <div class="m-4 bg-light text-center" style="padding: 100px 100px 100px 100px;">
-        <h5>Challenge:</h5>
-        <h4 style="color: #8277e2;">
-            How might we help solve communication with
-            professors and peers for first year university students in
-            their transition phase through a simplified and organized webapp?
-        </h4>
+
+    <div class="m-4 bg-light d-flex justify-content-center text-center" style="padding: 100px 100px 100px 100px;">
+        <div>
+            <h5>Challenge:</h5>
+            <h4 class="col-md-6 mx-auto" style="color: #8277e2;">
+                How might we help ease communication with
+                professors and peers for first year university students during
+                their transition phase?
+            </h4>
+        </div>
     </div>
+
 
     <section class="container">
         <div class="row justify-content-center mx-5">
@@ -84,27 +119,56 @@
                 on Figma. I attended weekly meetings to collaborate with my design lead and three other designers
                 to provide thoughtful feedback and discuss next steps.</p>
 
-            <h4>Research</h4>
+            <h4>User Research</h4>
             <p class="pb-4">We conducted user research on students through Google form surveys and consulted professors
-                at the Unviersity of
+                at the University of
                 Waterloo in order to gain a deeper understanding of the problem space and insight into user
                 needs.
-                We also created user personas and empathy maps of students and professors to better understand
-                our audience and their pain points.
-            </p>
-            <img src="images/studium-persona.png" class="mb-5" alt="persona of male student in first year of university"
+
+            <div class="row justify-content-center mb-4">
+                <div class="col-md-6">
+                    <p class="lh-1">RESEARCH FINDINGS
+                    <ul>
+                        <li>75% of students said they could not properly communicate with profs or peers through their
+                            learning applications</li>
+                        <li>75% of students preferred live lectures over any other method of delivery</li>
+                        <li>Students are using multiple platforms depending on courses</li>
+                        <li>Students are unable to sustain individual conversations with instructors</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <p class="lh-1">USER PERSONAS</p>
+                    <p>We also created user personas and empathy maps of students and professors to better understand
+                        our audience and their pain points.
+                    </p>
+                </div>
+            </div>
+
+            <img src="images/studium-persona.png" class="mb-4" alt="persona of male student in first year of university"
                 style="width: 650px;">
 
+            <img src="images/empathy-board.jpg" class="mb-5" alt="persona of male student in first year of university"
+                style="width: 900px;">
+
+
+
             <h4>App Ideation</h4>
-            <p class="pb-4">Based on our research, we rapidly brainstormed through crazy 8s and came up with features
-                that we wanted to include in our
-                learning
-                platform. We wanted to create a video and voice call feature, as well as direct messaging in
-                order for students to easily communicate with other students and professors. We designed low and
+            <p class="pb-4">Based on our research, we rapidly ideated possible features for our website using the Crazy 8s brainstorming technique.
+                The features we decided to include in our online learning platform were video and voice call features, as
+                well as direct messaging in
+                order for students to easily communicate with other students and professors. We collaboratively designed low and
                 medium-fidelity wireframes on Figma.
             </p>
 
-            <div id="carouselExampleControls" class="carousel slide mb-5" data-bs-ride="carousel" style="width: 650px;">
+            <p class="lead text-center">Crazy 8s Brainstorming</p>
+            <img src="images/crazy-8s.png" class="mb-5" alt="persona of male student in first year of university"
+                style="width: 1000px;">
+
+            <div id="carouselExampleControls" class="carousel slide mb-5" data-bs-ride="carousel" style="width: 750px;">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="images/Courses.png" class="d-block w-100"
@@ -135,7 +199,7 @@
                 have a cohesive website. We named our website app "Studium" which means study in latin. Our
                 brand values accessibility, ease and organization in an all-in-one platform.</p>
             <img src="images/studium-brand.png" class="mb-5" alt="Studium brand colours, fonts, and logo "
-                style="width: 650px;">
+                style="width: 750px;">
 
             <h4>The Website</h4>
             <p class="pb-2"> Our website was designed and prototyped on Figma and here is a short demo of our
@@ -147,6 +211,7 @@
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
             </div>
+
         </div>
     </section>
 
@@ -157,12 +222,14 @@
                 <p class="text-start mx-4"> &lt; / &gt; Coded by Jenny La 2023</p>
             </div>
             <div class="text-end mx-4 col-md">
-                <a href="https://www.etsy.com/ca/shop/JennyyCreates?ref=profile_header" target="_blank"><img src="images/etsy-logo.png"
-                    alt="Etsy logo" style="width: 37px"></a>
+                <a href="mailto:j25la@uwaterloo.ca" target="_blank"><img src="images/email.png" alt="email icon"
+                        style="width: 45px"></a>
+                <a href="https://www.linkedin.com/in/jenny-la-427a99222/" target="_blank"><img src="images/linkedin.png"
+                        alt="LinkedIn logo" class="mx-2" style="width: 35px"></a>
+                <a href="https://www.etsy.com/ca/shop/JennyyCreates?ref=profile_header" target="_blank"><img
+                        src="images/etsy-logo.png" alt="Etsy logo" style="width: 37px"></a>
                 <a href="https://www.instagram.com/jennyycreates/" target="_blank"><img src="images/ig.png"
                         alt="Instagram logo" class="mx-2" style="width: 40px"></a>
-                <a href="https://www.youtube.com/channel/UCcjzqEo-RtDW-_RsJbHgYjQ" target="_blank"><img
-                        src="images/youtube.png" alt="YouTube logo" style="width: 45px"></a>
             </div>
         </div>
     </footer>
